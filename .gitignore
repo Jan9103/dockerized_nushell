@@ -1,0 +1,5 @@
+# these contain ip-addresses, etc of somewhat private docker repositories
+push.sh
+
+# local downlads of nushell
+nu
