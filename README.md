@@ -9,6 +9,13 @@ A dockerized nushell instance.
 ## Usage
 Dependencies:
 - [docker](https://docs.docker.com/)
+
+### Using the GitHub Container Registry
+The `alpine` and `debian-slim` variant are available in the
+GitHub container registry:
+- alpine: `docker run --rm -it ghcr.io/jan9103/nushell:alpine`
+- debian-slim: `docker run --rm -it ghcr.io/jan9103/nushell:debian-slim`
+
 ### Building using the Makefiles
 Dependencies:
 - [curl](https://github.com/curl/curl)
@@ -24,7 +31,7 @@ Dependencies:
 2. copy a version of the `nu` binary to the directory
 3. run `docker build -t nushell:VARIANT .`
 
-### Running it
+### Running a manually build one
 `docker run --rm -it nushell:VARIANT`.  
 Example: `docker run --rm -it nushell:debian-slim`.
 
